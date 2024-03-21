@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import JSON</title>
+
+  <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+
+<div class="container">
+  <form th:action="@{/import}"
+  th:method="POST"
+        th:object="${stationSeedDTO}">
+  <button class="import-button">Import JSON</button>
+  </form>
+</div>
+
+</body>
+</html>
