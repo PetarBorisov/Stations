@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successful Import</title>
+  <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+<div class="container">
+  <form th:action="@{/statistics}">
+    <button class="import-button">Statistics</button>
+  </form>
+  <h1>Successful Import</h1>
+  <p>Your data has been successfully imported.</p>
+</div>
+</body>
+</html>
